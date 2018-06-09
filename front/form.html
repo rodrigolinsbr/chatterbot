@@ -57,6 +57,7 @@ function send(){
   		.done(function( data ) {
   			console.log(data.anwser);
     		
+
     		$("#conversa").prepend('<div class="message animated fadeInDown"><img src="jonnas.png" width="30" height="30" class="d-inline-block align-top" alt=""><span class="message-body  color-bot">'+data.anwser+'</span></div>');
 
   		}).fail( function(xhr, textStatus, errorThrown) {
@@ -93,7 +94,7 @@ body{
 	margin-bottom: 5px;
 }
 .message{
-	margin-bottom: 14px;
+	margin-bottom: 10px;
 }
 
 .message-body{
@@ -101,6 +102,7 @@ body{
 	padding: 10px 19px 10px 20px;
 border-radius: 90px;
 margin-left: 15px;
+font-size: 12px
 	
 }
 
